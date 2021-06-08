@@ -1,14 +1,5 @@
+
 const showContainer = document.getElementById("container")
-
-const getData = () => {
-    const url = "https://jsonplaceholder.typicode.com/users";
-    fetch(url).then((response) => response.json())
-        .then((employees) => {
-            showData(employees)
-        })
-        .catch((err) => console.log(err))
-}
-
 const showData = (employees) => {
 
     employees.forEach(number => {
@@ -18,7 +9,7 @@ const showData = (employees) => {
             img.classList.add("img-cont")
             let employeCont = document.createElement("div")
             let showEmployee = document.createElement("p")
-            aboutEmployee = document.createElement("p")
+            let aboutEmployee = document.createElement("p")
             aboutEmployee.innerHTML = "Ver empleado"
             aboutEmployee.setAttribute("id",number.id)
             console.log(aboutEmployee)
@@ -42,4 +33,6 @@ const showData = (employees) => {
 
 }
 
-getData();
+export{
+    showData
+}
