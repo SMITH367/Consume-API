@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width:100%;
+    height:150px;
+    margin-top: 50px;
+    background: #000;
+    color:aliceblue;
+}
+.footer a{
+    
+    color:#fff;
+}
+.footer p{
+    padding: 1em;
+}
+.center{
+    text-align: center;
+}
