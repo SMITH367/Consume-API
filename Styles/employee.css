@@ -8,7 +8,12 @@
 
 
 
-
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
 
@@ -21,12 +26,13 @@
     width:100%;
     height:150px;
     margin-top: 50px;
-    background: #000;
+    background: #000522;
     color:aliceblue;
 }
 .footer a{
     
     color:#fff;
+    list-style:lower-alpha;
 }
 .footer p{
     padding: 1em;
