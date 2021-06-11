@@ -5,13 +5,21 @@ import {
 const url = "https://jsonplaceholder.typicode.com/users";
 console.log("Conection whith JSONPlaceholder API");
 
-fetch(url).then((response)=>console.log(response))
+const getDatahtx = new XMLHttpRequest();
+
+
+getDatahtx.addEventListener("load",()=>{
+   let response = getDatahtx.response;
+    console.log("data",JSON.parse(response));
+})
+getDatahtx.open("GET",url);
+getDatahtx.send();
+
 
 const getData = () => {
     fetch(url)
         .then((response) => response.json())
         .then((employees) => {
-            console.log("data",employees)
             showData(employees);
             
         })
