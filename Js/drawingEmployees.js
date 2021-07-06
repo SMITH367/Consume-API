@@ -12,7 +12,7 @@ const showData = (employees) => {
         let showEmployee = document.createElement("p");
         let aboutEmployee = document.createElement("a");
 
-        img.src = "Sources/userimg.png";
+        img.src = "../Sources/userimg.png";
         img.classList.add("img-cont");
 
         aboutEmployee.classList.add("about-employee");
@@ -23,7 +23,7 @@ const showData = (employees) => {
         showEmployee.innerText = `${number.name}`;
 
         aboutEmployee.addEventListener("click",()=>{
-            window.location.href=`https://smith367.github.io/employees/employee.html?id=${number.id}`;
+            window.location.href=`../employees/employee.html?id=${number.id}`;
         })
 
         employeCont.appendChild(img);
