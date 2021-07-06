@@ -21,7 +21,6 @@ const getData = () => {
         .then((response) => response.json())
         .then((employees) => {
             showData(employees);
-            
         })
         .catch((err) => console.log(err));
 }

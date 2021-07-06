@@ -23,7 +23,7 @@ const showData = (employees) => {
         showEmployee.innerText = `${number.name}`;
 
         aboutEmployee.addEventListener("click",()=>{
-            window.location.href=`../employees/employee.html?id=${number.id}`;
+            window.location.href=`https://smith367.github.io/employees/employee.html?id=${number.id}`;
         })
 
         employeCont.appendChild(img);
