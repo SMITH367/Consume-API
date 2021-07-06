@@ -12,7 +12,7 @@ const showData = (employees) => {
         let showEmployee = document.createElement("p");
         let aboutEmployee = document.createElement("a");
 
-        img.src = "./Sources/userimg.png";
+        img.src = "Sources/userimg.png";
         img.classList.add("img-cont");
 
         aboutEmployee.classList.add("about-employee");
